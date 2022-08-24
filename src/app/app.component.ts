@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'course-app';
+  
+  headerEvent : string = 'recipe';
+
+  constructor() {
+
+  }
+
+  onNavigate(event : string) {
+    this.headerEvent = event;
+  }
 }
